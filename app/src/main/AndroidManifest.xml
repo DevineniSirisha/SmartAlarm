@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".WakeupActivity" />
-        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".AlertActivity"></activity>
     </application>
 
 </manifest>
