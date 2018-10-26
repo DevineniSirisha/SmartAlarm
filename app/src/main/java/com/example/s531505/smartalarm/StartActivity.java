@@ -1,20 +1,25 @@
 package com.example.s531505.smartalarm;
 
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class StartActivity extends AppCompatActivity {
+public class StartActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -62,4 +67,6 @@ public class StartActivity extends AppCompatActivity {
         }
      return super.onOptionsItemSelected(item);
     }
+
+
 }
