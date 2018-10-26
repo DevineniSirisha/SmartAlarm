@@ -19,7 +19,7 @@ public class StartActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 // Inflate the menu; this adds items to the
-        //action bar if it is present.
+//        action bar if it is present.
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
@@ -60,6 +60,6 @@ public class StartActivity extends AppCompatActivity {
 
 
         }
-        return super.onOptionsItemSelected(item);
+     return super.onOptionsItemSelected(item);
     }
 }
