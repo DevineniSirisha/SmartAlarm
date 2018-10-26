@@ -76,6 +76,7 @@ else{
 
     }
 
+<<<<<<< HEAD
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
@@ -95,4 +96,6 @@ else{
         tvSteps.setText(stepCount);
     }
 
+=======
+>>>>>>> f13ae3876a310b3901d8cf57e6ebb4ea6d4c9fe1
 }
