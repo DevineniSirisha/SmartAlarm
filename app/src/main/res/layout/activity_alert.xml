@@ -83,7 +83,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.629" />
 
-<<<<<<< Updated upstream
 
     <Button
         android:id="@+id/btn_start"
@@ -113,7 +112,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_start" />
 
-=======
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="245dp"
@@ -132,5 +131,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.92" />
->>>>>>> Stashed changes
 </android.support.constraint.ConstraintLayout>
