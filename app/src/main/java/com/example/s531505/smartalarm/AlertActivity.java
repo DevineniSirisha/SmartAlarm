@@ -11,5 +11,4 @@ public class AlertActivity extends AppCompatActivity {
         setContentView(R.layout.activity_alert);
     }
 
-
 }

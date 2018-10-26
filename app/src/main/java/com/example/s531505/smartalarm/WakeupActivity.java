@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TimePicker;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -49,17 +50,29 @@ public void save(View v){
     String format = simpleDateFormat.format(new Date());
     Log.d( "Current Time: " , format);
 
-    for(int i=1; i>0;i++) {
-        if(format.equals(time.getText().toString())) {
+    final String timet = time.getText().toString();
+
+        if(timet.equals(time.getText().toString())) {
             Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
             r.play();
+
+            Intent intent1=new Intent(this,AlertActivity.class);
+            startActivity(intent1);
         }
-    }
 }
     public void cancel(View v){
         Intent intent1=new Intent(this,StartActivity.class);
         startActivity(intent1);
     }
 
+
+    public void resetFunction(View v){
+        EditText wk=(EditText) findViewById(R.id.setWakeUpTime);
+        wk.setText("");
+        EditText sc=(EditText) findViewById(R.id.StepCount);
+        sc.setText("");
+        EditText nd=(EditText) findViewById(R.id.NotesDesc);
+        nd.setText("");
+    }
 }
