@@ -20,12 +20,17 @@ public class AlertActivity extends AppCompatActivity  implements SensorEventList
     private static final String steps = "Total Steps: ";
     private int stepCount;
     TextView tvSteps;
-    Button btnStart;
-    Button btnStop;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
+<<<<<<< HEAD
+=======
+        Intent wakeUp=getIntent();
+        String wakeUpText=wakeUp.getStringExtra("Notes");
+        TextView textView_Alert=findViewById(R.id.textView_Alert);
+        textView_Alert.setText(wakeUpText);
+>>>>>>> 57eefd163d4b401bab8eb3a829b5525a87ec0ccc
 
 //        Intent wakeUp=getIntent();
 //        String wakeUpText=wakeUp.getStringExtra("Notes");
@@ -40,18 +45,21 @@ public class AlertActivity extends AppCompatActivity  implements SensorEventList
         TextView location_Alert=findViewById(R.id.textView_Alert);
         location_Alert.setText(locationText);
 
+<<<<<<< HEAD
         manager = (SensorManager) getSystemService(SENSOR_SERVICE);
         accelarator = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         detector = new StepDetector();
         detector.registerListener(this);
 
+=======
+>>>>>>> 57eefd163d4b401bab8eb3a829b5525a87ec0ccc
         manager = (SensorManager) getSystemService(SENSOR_SERVICE);
         accelarator = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         detector = new StepDetector();
         detector.registerListener(this);
         tvSteps = (TextView) findViewById(R.id.textViewalert4);
-        btnStart = (Button) findViewById(R.id.btn_start);
-        btnStop = (Button) findViewById(R.id.btn_stop);
+        Button btnStart = (Button) findViewById(R.id.btn_start);
+       Button btnStop = (Button) findViewById(R.id.btn_stop);
         btnStart.setOnClickListener(new View.OnClickListener() {
 
             @Override

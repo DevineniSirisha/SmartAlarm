@@ -82,7 +82,10 @@ public void save(View v){
     } else {
     final String timet = time.getText().toString();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 57eefd163d4b401bab8eb3a829b5525a87ec0ccc
         if(timet.equals(time.getText().toString())) {
             Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
@@ -98,6 +101,7 @@ public void save(View v){
             Intent intent1=new Intent(this,StartActivity.class);
             startActivity(intent1);
         }
+<<<<<<< HEAD
     if (timet.equals(time.getText().toString())) {
         Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
@@ -108,6 +112,9 @@ public void save(View v){
     }
 }
 
+=======
+}
+>>>>>>> 57eefd163d4b401bab8eb3a829b5525a87ec0ccc
 }
     public void cancel(View v){
         Intent intent1=new Intent(this,StartActivity.class);
