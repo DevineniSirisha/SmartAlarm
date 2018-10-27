@@ -82,7 +82,6 @@ if (time.getText().toString().isEmpty()) {
     } else {
     final String timet = time.getText().toString();
 
-<<<<<<< HEAD
         if(timet.equals(time.getText().toString())) {
             Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
@@ -97,17 +96,7 @@ if (time.getText().toString().isEmpty()) {
             Intent intent1=new Intent(this,StartActivity.class);
             startActivity(intent1);
         }
-=======
-    if (timet.equals(time.getText().toString())) {
-        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
-        r.play();
-
-        Intent intent1 = new Intent(this, AlertActivity.class);
-        startActivity(intent1);
-    }
 }
->>>>>>> 8775eb5951996568affb4560c9774ba16fc24620
 }
     public void cancel(View v){
         Intent intent1=new Intent(this,StartActivity.class);
