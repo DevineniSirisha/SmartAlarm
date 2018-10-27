@@ -16,7 +16,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -41,37 +40,21 @@ public class WakeupActivity extends AppCompatActivity implements TimePickerDialo
             }
         });
     }
-
     public void onTimeSet(TimePicker timePicker, int i, int i1) {
-
-
         String status = "AM";
-
         if (i > 11) {
-
             status = "PM";
         }
-
-
         int hour_of_12_hour_format;
-
         if (i > 11) {
-
-
             hour_of_12_hour_format = i - 12;
         } else {
             hour_of_12_hour_format = i;
         }
-
-
         time = (EditText) findViewById(R.id.setWakeUpTime);
 
         time.setText(hour_of_12_hour_format + ":" + i1 + " " + status);
     }
-
-
-
-
 public void save(View v){
     time = findViewById(R.id.setWakeUpTime);
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm a");
@@ -80,47 +63,27 @@ public void save(View v){
     if (time.getText().toString().isEmpty()) {
     time.setError("error");
     } else {
-    final String timet = time.getText().toString();
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 57eefd163d4b401bab8eb3a829b5525a87ec0ccc
-        if(timet.equals(time.getText().toString())) {
+        final String timet = time.getText().toString();
+        if (timet.equals(time.getText().toString())) {
             Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
             r.play();
-            TextView NotesDesc=findViewById(R.id.NotesDesc);
-            String text=NotesDesc.getText().toString();
-
-            Intent intent1=new Intent(this,AlertActivity.class);
-            intent1.putExtra("Notes",text);
+            TextView NotesDesc = findViewById(R.id.NotesDesc);
+            String text = NotesDesc.getText().toString();
+            Intent intent1 = new Intent(this, AlertActivity.class);
+            intent1.putExtra("Notes", text);
+            startActivity(intent1);
+        } else {
+            Intent intent1 = new Intent(this, StartActivity.class);
             startActivity(intent1);
         }
-        else{
-            Intent intent1=new Intent(this,StartActivity.class);
-            startActivity(intent1);
-        }
-<<<<<<< HEAD
-    if (timet.equals(time.getText().toString())) {
-        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
-        r.play();
 
-        Intent intent1 = new Intent(this, AlertActivity.class);
-        startActivity(intent1);
     }
-}
-
-=======
-}
->>>>>>> 57eefd163d4b401bab8eb3a829b5525a87ec0ccc
 }
     public void cancel(View v){
         Intent intent1=new Intent(this,StartActivity.class);
         startActivity(intent1);
     }
-
     public void resetFunction(View v){
         EditText wk=(EditText) findViewById(R.id.setWakeUpTime);
         wk.setText("");
@@ -129,7 +92,4 @@ public void save(View v){
         EditText nd=(EditText) findViewById(R.id.NotesDesc);
         nd.setText("");
     }
-
-
-
 }
