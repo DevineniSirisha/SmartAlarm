@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.text.ParseException;
@@ -25,6 +26,7 @@ public class WakeupActivity extends AppCompatActivity implements TimePickerDialo
     EditText time;
     AlarmManager alarm_manager;
     EditText notesDesc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,8 +58,14 @@ public void save(View v){
             Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
             r.play();
-
+            TextView NotesDesc=findViewById(R.id.NotesDesc);
+            String text=NotesDesc.getText().toString();
             Intent intent1=new Intent(this,AlertActivity.class);
+            intent1.putExtra("Notes",text);
+            startActivity(intent1);
+        }
+        else{
+            Intent intent1=new Intent(this,StartActivity.class);
             startActivity(intent1);
         }
 }
@@ -65,7 +73,6 @@ public void save(View v){
         Intent intent1=new Intent(this,StartActivity.class);
         startActivity(intent1);
     }
-
 
     public void resetFunction(View v){
         EditText wk=(EditText) findViewById(R.id.setWakeUpTime);
@@ -75,4 +82,7 @@ public void save(View v){
         EditText nd=(EditText) findViewById(R.id.NotesDesc);
         nd.setText("");
     }
+
+
+
 }

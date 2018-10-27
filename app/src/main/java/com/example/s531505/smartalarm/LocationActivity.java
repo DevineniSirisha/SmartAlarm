@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class LocationActivity extends AppCompatActivity {
 
@@ -15,8 +16,18 @@ public class LocationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_location);
     }
     public void Savebtn(View v){
-        Intent intent=new Intent(this,StartActivity.class);
-        startActivity(intent);
+
+            TextView NotesDesc = findViewById(R.id.AlarmNameET);
+            String text = NotesDesc.getText().toString();
+        if(!text.isEmpty()) {
+            Intent intent1 = new Intent(this, AlertActivity.class);
+            intent1.putExtra("Notes1", text);
+            startActivity(intent1);
+        }
+        else {
+            Intent intent = new Intent(this, StartActivity.class);
+            startActivity(intent);
+        }
     }
     public void Resetbtn(View v){
         EditText et1=findViewById(R.id.AlarmNameET);

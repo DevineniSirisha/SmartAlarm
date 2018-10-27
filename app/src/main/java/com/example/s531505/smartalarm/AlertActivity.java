@@ -26,6 +26,16 @@ public class AlertActivity extends AppCompatActivity  implements SensorEventList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
+        Intent wakeUp=getIntent();
+        String wakeUpText=wakeUp.getStringExtra("Notes");
+        TextView textView_Alert=findViewById(R.id.textView_Alert);
+        textView_Alert.setText(wakeUpText);
+
+        Intent location=getIntent();
+        String locatioText=location.getStringExtra("Notes1");
+        TextView location_Alert=findViewById(R.id.textView_Alert);
+        textView_Alert.setText(locatioText);
+
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         accelarator = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         stepDetector = new StepDetector();
@@ -92,4 +102,5 @@ else{
         stepCount++;
         tvSteps.setText(stepCount);
     }
+
 }
