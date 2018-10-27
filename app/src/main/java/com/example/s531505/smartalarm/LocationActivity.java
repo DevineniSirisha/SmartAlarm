@@ -11,9 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 <<<<<<< HEAD
 import android.widget.TextView;
-=======
 import android.widget.Toast;
->>>>>>> 8775eb5951996568affb4560c9774ba16fc24620
 
 public class LocationActivity extends AppCompatActivity {
 
