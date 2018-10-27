@@ -1,12 +1,19 @@
 package com.example.s531505.smartalarm;
 
+import android.Manifest;
 import android.content.Intent;
+import android.location.Location;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+<<<<<<< HEAD
 import android.widget.TextView;
+=======
+import android.widget.Toast;
+>>>>>>> 8775eb5951996568affb4560c9774ba16fc24620
 
 public class LocationActivity extends AppCompatActivity {
 
@@ -14,6 +21,19 @@ public class LocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
+        ActivityCompat.requestPermissions(LocationActivity.this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 123);
+    }
+
+    public void onClick(View v) {
+        LatAndLong gt = new LatAndLong(getApplicationContext());
+        Location l = gt.getLocationOfUser();
+        if( l == null){
+            Toast.makeText(getApplicationContext(),"GPS unable to get Value",Toast.LENGTH_SHORT).show();
+        }else {
+            double lat = l.getLatitude();
+            double lon = l.getLongitude();
+            Toast.makeText(getApplicationContext(),"GPS Lat = "+lat+"\n lon = "+lon,Toast.LENGTH_SHORT).show();
+        }
     }
     public void Savebtn(View v){
 

@@ -7,11 +7,11 @@ package com.example.s531505.smartalarm;
         }
 
         public static float sum(float[] array) {
-            float retval = 0;
+            float result = 0;
             for (int i = 0; i < array.length; i++) {
-                retval += array[i];
+                result += array[i];
             }
-            return retval;
+            return result;
         }
 
         public static float[] cross(float[] arrayA, float[] arrayB) {
@@ -22,27 +22,27 @@ package com.example.s531505.smartalarm;
             return retArray;
         }
 
-        public static float norm(float[] array) {
-            float retval = 0;
-            for (int i = 0; i < array.length; i++) {
-                retval += array[i] * array[i];
+        public static float norm(float[] arr) {
+            float retnval = 0;
+            for (int i = 0; i < arr.length; i++) {
+                retnval += arr[i] * arr[i];
             }
-            return (float) Math.sqrt(retval);
+            return (float) Math.sqrt(retnval);
         }
 
 
-        public static float dot(float[] a, float[] b) {
-            float retval = a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+        public static float dot(float[] a1, float[] a2) {
+            float retval = a1[0] * a2[0] + a1[1] * a2[1] + a1[2] * a2[2];
             return retval;
         }
 
         public static float[] normalize(float[] a) {
-            float[] retval = new float[a.length];
+            float[] returnval = new float[a.length];
             float norm = norm(a);
             for (int i = 0; i < a.length; i++) {
-                retval[i] = a[i] / norm;
+                returnval[i] = a[i] / norm;
             }
-            return retval;
+            return returnval;
         }
 
     }

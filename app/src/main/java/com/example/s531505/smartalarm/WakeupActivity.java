@@ -21,7 +21,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class WakeupActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener{
+public class WakeupActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
 
     EditText time;
     AlarmManager alarm_manager;
@@ -36,24 +36,53 @@ public class WakeupActivity extends AppCompatActivity implements TimePickerDialo
         tbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                android.support.v4.app.DialogFragment timePicker=new TimePickerFragment();
-                timePicker.show(getSupportFragmentManager(),"time picker");
+                android.support.v4.app.DialogFragment timePicker = new TimePickerFragment();
+                timePicker.show(getSupportFragmentManager(), "time picker");
             }
         });
     }
 
     public void onTimeSet(TimePicker timePicker, int i, int i1) {
-        time=(EditText) findViewById(R.id.setWakeUpTime);
-        time.setText(i+":"+i1);
+
+
+        String status = "AM";
+
+        if (i > 11) {
+
+            status = "PM";
+        }
+
+
+        int hour_of_12_hour_format;
+
+        if (i > 11) {
+
+
+            hour_of_12_hour_format = i - 12;
+        } else {
+            hour_of_12_hour_format = i;
+        }
+
+
+        time = (EditText) findViewById(R.id.setWakeUpTime);
+
+        time.setText(hour_of_12_hour_format + ":" + i1 + " " + status);
     }
 
+
+
+
 public void save(View v){
+    time = findViewById(R.id.setWakeUpTime);
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm a");
     String format = simpleDateFormat.format(new Date());
     Log.d( "Current Time: " , format);
-
+if (time.getText().toString().isEmpty()) {
+    time.setError("error");
+    } else {
     final String timet = time.getText().toString();
 
+<<<<<<< HEAD
         if(timet.equals(time.getText().toString())) {
             Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
@@ -68,6 +97,17 @@ public void save(View v){
             Intent intent1=new Intent(this,StartActivity.class);
             startActivity(intent1);
         }
+=======
+    if (timet.equals(time.getText().toString())) {
+        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+        r.play();
+
+        Intent intent1 = new Intent(this, AlertActivity.class);
+        startActivity(intent1);
+    }
+}
+>>>>>>> 8775eb5951996568affb4560c9774ba16fc24620
 }
     public void cancel(View v){
         Intent intent1=new Intent(this,StartActivity.class);

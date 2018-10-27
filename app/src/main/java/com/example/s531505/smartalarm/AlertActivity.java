@@ -13,12 +13,11 @@ import android.widget.TextView;
 
 public class AlertActivity extends AppCompatActivity  implements SensorEventListener, StepCounter{
     private TextView textView;
-    private StepDetector stepDetector;
-    private SensorManager sensorManager;
+    private StepDetector detector;
+    private SensorManager manager;
     private Sensor accelarator;
-    private static final String steps = "Number of Steps: ";
+    private static final String steps = "Total Steps: ";
     private int stepCount;
-
     TextView tvSteps;
     Button btnStart;
     Button btnStop;
@@ -26,6 +25,7 @@ public class AlertActivity extends AppCompatActivity  implements SensorEventList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
+<<<<<<< HEAD
         Intent wakeUp=getIntent();
         String wakeUpText=wakeUp.getStringExtra("Notes");
         TextView textView_Alert=findViewById(R.id.textView_Alert);
@@ -41,39 +41,35 @@ public class AlertActivity extends AppCompatActivity  implements SensorEventList
         stepDetector = new StepDetector();
         stepDetector.registerListener(this);
 
+=======
+        manager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        accelarator = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        detector = new StepDetector();
+        detector.registerListener(this);
+>>>>>>> 8775eb5951996568affb4560c9774ba16fc24620
         tvSteps = (TextView) findViewById(R.id.textViewalert4);
         btnStart = (Button) findViewById(R.id.btn_start);
         btnStop = (Button) findViewById(R.id.btn_stop);
-
-
-
         btnStart.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-
                 stepCount = 0;
-                sensorManager.registerListener(AlertActivity.this, accelarator, SensorManager.SENSOR_DELAY_FASTEST);
-
+                manager.registerListener(AlertActivity.this, accelarator, SensorManager.SENSOR_DELAY_FASTEST);
             }
         });
-
-
         btnStop.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-
-                sensorManager.unregisterListener(AlertActivity.this);
-
+                manager.unregisterListener(AlertActivity.this);
             }
         });
-
-if(stepCount==20){
+if(stepCount>20){
     Intent intent=new Intent(this,StartActivity.class);
     startActivity(intent);
 }
-else if(stepCount>20){
+else if(stepCount==20){
     Intent intent=new Intent(this,StartActivity.class);
     startActivity(intent);
 }
@@ -83,20 +79,17 @@ else{
     TextView tv=findViewById(R.id.textview_Alert2);
     tv.setText("You need to walk "+(20-stepCount)+" more to switch off the alarm" );
 }
-
     }
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
-
     @Override
     public void onSensorChanged(SensorEvent event) {
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-            stepDetector.updateAccel(
+            detector.updateAccel(
                     event.timestamp, event.values[0], event.values[1], event.values[2]);
         }
     }
-
     @Override
     public void step(long timeNs) {
         stepCount++;
