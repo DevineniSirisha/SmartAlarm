@@ -77,18 +77,19 @@ public void save(View v){
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm a");
     String format = simpleDateFormat.format(new Date());
     Log.d( "Current Time: " , format);
-if (time.getText().toString().isEmpty()) {
+    if (time.getText().toString().isEmpty()) {
     time.setError("error");
     } else {
     final String timet = time.getText().toString();
 
-<<<<<<< HEAD
+
         if(timet.equals(time.getText().toString())) {
             Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
             r.play();
             TextView NotesDesc=findViewById(R.id.NotesDesc);
             String text=NotesDesc.getText().toString();
+
             Intent intent1=new Intent(this,AlertActivity.class);
             intent1.putExtra("Notes",text);
             startActivity(intent1);
@@ -97,7 +98,6 @@ if (time.getText().toString().isEmpty()) {
             Intent intent1=new Intent(this,StartActivity.class);
             startActivity(intent1);
         }
-=======
     if (timet.equals(time.getText().toString())) {
         Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
@@ -107,7 +107,7 @@ if (time.getText().toString().isEmpty()) {
         startActivity(intent1);
     }
 }
->>>>>>> 8775eb5951996568affb4560c9774ba16fc24620
+
 }
     public void cancel(View v){
         Intent intent1=new Intent(this,StartActivity.class);

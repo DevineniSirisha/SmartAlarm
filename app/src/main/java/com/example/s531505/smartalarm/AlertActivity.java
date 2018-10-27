@@ -7,6 +7,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,28 +26,29 @@ public class AlertActivity extends AppCompatActivity  implements SensorEventList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
-<<<<<<< HEAD
-        Intent wakeUp=getIntent();
-        String wakeUpText=wakeUp.getStringExtra("Notes");
-        TextView textView_Alert=findViewById(R.id.textView_Alert);
-        textView_Alert.setText(wakeUpText);
 
+//        Intent wakeUp=getIntent();
+//        String wakeUpText=wakeUp.getStringExtra("Notes");
+//        TextView textView_Alert=findViewById(R.id.textView_Alert);
+//        textView_Alert.setText(wakeUpText);
+//        Log.d("dfdtest", wakeUpText);
+//        Log.d("print", textView_Alert.getText().toString());
+//
+//
         Intent location=getIntent();
-        String locatioText=location.getStringExtra("Notes1");
+        String locationText=location.getStringExtra("Notes1");
         TextView location_Alert=findViewById(R.id.textView_Alert);
-        textView_Alert.setText(locatioText);
+        location_Alert.setText(locationText);
 
-        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        accelarator = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        stepDetector = new StepDetector();
-        stepDetector.registerListener(this);
-
-=======
         manager = (SensorManager) getSystemService(SENSOR_SERVICE);
         accelarator = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         detector = new StepDetector();
         detector.registerListener(this);
->>>>>>> 8775eb5951996568affb4560c9774ba16fc24620
+
+        manager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        accelarator = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        detector = new StepDetector();
+        detector.registerListener(this);
         tvSteps = (TextView) findViewById(R.id.textViewalert4);
         btnStart = (Button) findViewById(R.id.btn_start);
         btnStop = (Button) findViewById(R.id.btn_stop);
