@@ -20,7 +20,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class WakeupActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
+public class WakeupActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener, ResetDialog.ResetDialogInterface, ConfirmDialog.ConfirmDialogInterface {
 
     EditText time;
     AlarmManager alarm_manager;
@@ -81,15 +81,27 @@ public void save(View v){
     }
 }
     public void cancel(View v){
-        Intent intent1=new Intent(this,StartActivity.class);
-        startActivity(intent1);
+        ConfirmDialog confirmDialog = new ConfirmDialog();
+        confirmDialog.show(getSupportFragmentManager(), "cancel btn wakeup activity");
     }
     public void resetFunction(View v){
+  ResetDialog resetDialog = new ResetDialog();
+        resetDialog.show(getSupportFragmentManager(), "reset wakeup activity");
+    }
+
+    @Override
+    public void reset() {
         EditText wk=(EditText) findViewById(R.id.setWakeUpTime);
         wk.setText("");
         EditText sc=(EditText) findViewById(R.id.StepCount);
         sc.setText("");
         EditText nd=(EditText) findViewById(R.id.NotesDesc);
         nd.setText("");
+    }
+
+    @Override
+    public void cancel() {
+        Intent intent1=new Intent(this,StartActivity.class);
+        startActivity(intent1);
     }
 }

@@ -5,6 +5,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,7 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class StartActivity extends AppCompatActivity  {
+public class StartActivity extends AppCompatActivity implements BackGrDialog.ColorCallBack {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,5 +69,33 @@ public class StartActivity extends AppCompatActivity  {
      return super.onOptionsItemSelected(item);
     }
 
+public void change(View v){
+    BackGrDialog colorD = new BackGrDialog();
+    colorD.show(getSupportFragmentManager(),"TAG");
+}
+    @Override
+    public void setBackgroundImage(int imageChoice) {
+            ConstraintLayout bg=findViewById(R.id.bg);
+            
+            switch(imageChoice){
+                case 0:
 
+                    bg.setBackgroundResource(R.drawable.bg1);
+                    break;
+                case 1:
+                    bg.setBackgroundResource(R.drawable.bgr);
+                    break;
+                case 2:
+                    bg.setBackgroundResource(R.drawable.bg3);
+                    break;
+                case 3:
+                    bg.setBackgroundResource(R.drawable.bg4);
+                    break;
+                default:
+                    bg.setBackgroundResource(R.drawable.bg);
+                    break;
+            }
+            Toast.makeText(StartActivity.this,
+                    "You have changed background", Toast.LENGTH_LONG).show();
+    }
 }

@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LocationActivity extends AppCompatActivity {
+public class LocationActivity extends AppCompatActivity implements ResetDialog.ResetDialogInterface, ConfirmDialog.ConfirmDialogInterface {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,23 @@ public class LocationActivity extends AppCompatActivity {
         }
     }
     public void Resetbtn(View v){
+        ResetDialog resetDialog = new ResetDialog();
+        resetDialog.show(getSupportFragmentManager(), "reset location activity");
+    }
+    public void cancelbtn(View v){
+        ConfirmDialog confirmDialog = new ConfirmDialog();
+        confirmDialog.show(getSupportFragmentManager(), "cancel btn location activity");
+
+    }
+    public void Searchbtn(View v){
+        String data="https://www.google.com/maps";
+        Intent searchIntent=new Intent(Intent.ACTION_VIEW);
+        searchIntent.setData(Uri.parse(data));
+        startActivity(searchIntent);
+    }
+
+    @Override
+    public void reset() {
         EditText et1=findViewById(R.id.AlarmNameET);
         EditText et2=findViewById(R.id.AlarmDesET);
         EditText et3=findViewById(R.id.RadiusET);
@@ -56,14 +73,10 @@ public class LocationActivity extends AppCompatActivity {
         et3.setText("");
         et4.setText("");
     }
-    public void cancelbtn(View v){
+
+    @Override
+    public void cancel() {
         Intent intent=new Intent(this,StartActivity.class);
         startActivity(intent);
-    }
-    public void Searchbtn(View v){
-        String data="https://www.google.com/maps";
-        Intent searchIntent=new Intent(Intent.ACTION_VIEW);
-        searchIntent.setData(Uri.parse(data));
-        startActivity(searchIntent);
     }
 }
