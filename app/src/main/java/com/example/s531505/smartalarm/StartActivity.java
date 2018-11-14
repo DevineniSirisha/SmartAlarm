@@ -76,7 +76,7 @@ public void change(View v){
     @Override
     public void setBackgroundImage(int imageChoice) {
             ConstraintLayout bg=findViewById(R.id.bg);
-            
+
             switch(imageChoice){
                 case 0:
 
