@@ -1096,8 +1096,6 @@ id blocking
 id bottom
 id btn1
 id btn2
-id btn_start
-id btn_stop
 id buttonPanel
 id cancelButton
 id center
@@ -1232,6 +1230,7 @@ id src_in
 id src_over
 id standard
 id start
+id stop
 id stretch
 id submenuarrow
 id submit_area

@@ -75,24 +75,39 @@ public void change(View v){
 }
     @Override
     public void setBackgroundImage(int imageChoice) {
+        WakeupActivity wake=new WakeupActivity();
+        LocationActivity loc=new LocationActivity();
             ConstraintLayout bg=findViewById(R.id.bg);
+        View v1= getLayoutInflater().inflate(R.layout.activity_wakeup,null);
+        View v2= getLayoutInflater().inflate(R.layout.activity_location,null);
+        View v3= getLayoutInflater().inflate(R.layout.activity_alert,null);
+        ConstraintLayout bgw=v1.findViewById(R.id.bg1);
+        ConstraintLayout bgl=v1.findViewById(R.id.bg2);
+        ConstraintLayout bga=v1.findViewById(R.id.bg3);
 
             switch(imageChoice){
                 case 0:
-
                     bg.setBackgroundResource(R.drawable.bg1);
+                   // bgw.getWindow().setBackgroundDrawableResource(R.drawable.bg1);
+
                     break;
                 case 1:
                     bg.setBackgroundResource(R.drawable.bgr);
+
                     break;
                 case 2:
                     bg.setBackgroundResource(R.drawable.bg3);
+
+
                     break;
                 case 3:
                     bg.setBackgroundResource(R.drawable.bg4);
+
+
                     break;
                 default:
                     bg.setBackgroundResource(R.drawable.bg);
+
                     break;
             }
             Toast.makeText(StartActivity.this,
