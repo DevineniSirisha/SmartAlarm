@@ -1,4 +1,4 @@
-#Thu Nov 15 09:32:44 CST 2018
-base.0=C\:\\Users\\S531505\\AndroidStudioProjects\\SmartAlarm\\SmartAlarm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+#Thu Nov 15 14:02:20 CST 2018
+base.0=C\:\\Users\\s531367\\Desktop\\fall 2018\\android\\pro\\SmartAlarm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
 path.0=classes.dex
 renamed.0=classes.dex

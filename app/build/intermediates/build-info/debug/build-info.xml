@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="28"
+    api-level="25"
     build-mode="FULL"
-    density="560dpi"
+    density="xhdpi"
     format="10"
     plugin-version="3.2.0"
-    timestamp="1542295929013"
+    timestamp="1542312169893"
     token="-1460807912468543835"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -18,34 +18,31 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="6214" />
+        duration="0" />
     <task
         name="verifier"
         duration="0" />
 
     <artifact
-        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-        type="SPLIT" />
-    <artifact
         location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -54,42 +51,72 @@
         location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1542295929013"
+        timestamp="1542312169893"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -98,13 +125,46 @@
             location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\S531505\AndroidStudioProjects\SmartAlarm\SmartAlarm\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\s531367\Desktop\fall 2018\android\pro\SmartAlarm\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\S531505\\AndroidStudioProjects\\SmartAlarm\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
+            "outputFile": "C:\\Users\\s531367\\Desktop\\fall 2018\\android\\pro\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\S531505\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\7062984522ab54fa9aa88a81e6301504\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\s531367\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6471aed178d1955f834e5514309ca70a\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
