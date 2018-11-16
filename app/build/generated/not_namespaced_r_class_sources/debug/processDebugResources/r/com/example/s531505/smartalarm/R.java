@@ -789,7 +789,6 @@ public final class R {
      */
     public static final int buttonPanelSideLayout=0x7f030055;
     /**
-     * Normal Button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -807,11 +806,7 @@ public final class R {
      */
     public static final int buttonSize=0x7f030056;
     /**
-<<<<<<< HEAD
-     * Small Button style.
-=======
      * Normal Button style.
->>>>>>> cbd7c392f8b3bf699a0cddd833c376231fe6a7f4
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -819,8 +814,6 @@ public final class R {
      */
     public static final int buttonStyle=0x7f030057;
     /**
-<<<<<<< HEAD
-=======
      * Small Button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -829,7 +822,6 @@ public final class R {
      */
     public static final int buttonStyleSmall=0x7f030058;
     /**
->>>>>>> cbd7c392f8b3bf699a0cddd833c376231fe6a7f4
      * Tint to apply to the button drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -1085,14 +1077,11 @@ public final class R {
      */
     public static final int chipStyle=0x7f03007a;
     /**
-<<<<<<< HEAD
-=======
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int circleCrop=0x7f03007b;
     /**
->>>>>>> cbd7c392f8b3bf699a0cddd833c376231fe6a7f4
      * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2213,8 +2202,6 @@ public final class R {
      */
     public static final int iconifiedByDefault=0x7f0300fe;
     /**
-<<<<<<< HEAD
-=======
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int imageAspectRatio=0x7f0300ff;
@@ -2232,7 +2219,6 @@ public final class R {
      */
     public static final int imageAspectRatioAdjust=0x7f030100;
     /**
->>>>>>> cbd7c392f8b3bf699a0cddd833c376231fe6a7f4
      * ImageButton background drawable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -4463,11 +4449,7 @@ public final class R {
      * mm (millimeters).
      */
     @Deprecated
-<<<<<<< HEAD
-    public static final int titleMargins=0x7f0301fb;
-=======
     public static final int titleMargins=0x7f030201;
->>>>>>> cbd7c392f8b3bf699a0cddd833c376231fe6a7f4
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme

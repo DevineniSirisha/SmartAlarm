@@ -1,17 +1,20 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\s531367\\Desktop\\fall 2018\\android\\pro\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\s531367\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6471aed178d1955f834e5514309ca70a\\res\\values-v16\\values-v16.xml",
-=======
             "outputFile": "C:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\33114843460fd38fefcb497123878b78\\res\\values-v16\\values-v16.xml",
->>>>>>> cbd7c392f8b3bf699a0cddd833c376231fe6a7f4
+                    "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ae8f517ac007dbc344166fec9590ba8f\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\79f780a1dd0be87dbdd3ccdb7b12ecde\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -27,20 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\s531367\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\08af0dc99392bb82ce65282e77e32d44\\res\\values-v16\\values-v16.xml",
-=======
-                    "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\d2377c5d6045617b92fb6079944bee95\\res\\values-v16\\values-v16.xml",
->>>>>>> cbd7c392f8b3bf699a0cddd833c376231fe6a7f4
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]
