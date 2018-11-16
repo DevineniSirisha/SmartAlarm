@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\s531367\\Desktop\\fall 2018\\android\\pro\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
@@ -15,6 +16,12 @@
                 },
                 {
                     "source": "C:\\Users\\s531367\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\dc44938dfb2d7ece61234bfeff2158bf\\res\\values-large-v4\\values-large-v4.xml",
+=======
+            "outputFile": "C:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\9f21f59b5ec0f1a54b5d45bed63250c9\\res\\values-large-v4\\values-large-v4.xml",
+>>>>>>> cbd7c392f8b3bf699a0cddd833c376231fe6a7f4
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -28,6 +35,16 @@
                         "startOffsets": "752,874",
                         "endColumns": "121,133",
                         "endOffsets": "869,1003"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\33114843460fd38fefcb497123878b78\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
                     }
                 }
             ]
