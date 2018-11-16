@@ -26,6 +26,7 @@ public class WakeupActivity extends AppCompatActivity implements TimePickerDialo
     AlarmManager alarm_manager;
     EditText notesDesc;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

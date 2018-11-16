@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\S531505\\AndroidStudioProjects\\SmartAlarm\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\S531505\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\50d5bff230929ea2fc1e4a2b2873fd4e\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\7681ec255da3559ad6551d5f8a4cd43b\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\S531505\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\7062984522ab54fa9aa88a81e6301504\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\33114843460fd38fefcb497123878b78\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
