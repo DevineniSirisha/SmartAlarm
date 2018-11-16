@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">445538489809-9j7l8hcc7c1rjef6987e37a41qrsklud.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://smartalarm-ee34f.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">445538489809</string>
+    <string name="google_api_key" translatable="false">AIzaSyALHIttiUwJ-JZvTxKB4pjj0-u5es-jL9g</string>
+    <string name="google_app_id" translatable="false">1:445538489809:android:c40b06dfb998c33c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyALHIttiUwJ-JZvTxKB4pjj0-u5es-jL9g</string>
+    <string name="google_storage_bucket" translatable="false">smartalarm-ee34f.appspot.com</string>
+    <string name="project_id" translatable="false">smartalarm-ee34f</string>
+</resources>

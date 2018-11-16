@@ -26,6 +26,7 @@ public class WakeupActivity extends AppCompatActivity implements TimePickerDialo
     AlarmManager alarm_manager;
     EditText notesDesc;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,21 +41,37 @@ public class WakeupActivity extends AppCompatActivity implements TimePickerDialo
             }
         });
     }
-    public void onTimeSet(TimePicker timePicker, int i, int i1) {
-        String status = "AM";
-        if (i > 11) {
-            status = "PM";
+    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+        int hour = hourOfDay;
+        int minutes = minute;
+        String timeSet = "";
+        if (hour > 12) {
+            hour -= 12;
+            timeSet = "PM";
+        } else if (hour == 0) {
+            hour += 12;
+            timeSet = "AM";
+        } else if (hour == 12){
+            timeSet = "PM";
+        }else{
+            timeSet = "AM";
         }
-        int hour_of_12_hour_format;
-        if (i > 11) {
-            hour_of_12_hour_format = i - 12;
-        } else {
-            hour_of_12_hour_format = i;
-        }
-        time = (EditText) findViewById(R.id.setWakeUpTime);
 
-        time.setText(hour_of_12_hour_format + ":" + i1 + " " + status);
+        String min = "";
+        if (minutes < 10) {
+            min = "0" + minutes;
+        }
+        else {
+            min = String.valueOf(minutes);
+        }
+
+        time = (EditText) findViewById(R.id.setWakeUpTime);
+        String aTime = new StringBuilder().append(hour).append(':')
+                .append(min ).append(" ").append(timeSet).toString();
+        time.setText(aTime);
+
     }
+
 public void save(View v){
     time = findViewById(R.id.setWakeUpTime);
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm a");
