@@ -5,7 +5,7 @@ In location-based alarm – you need to set alarm based on location by enabling 
 In wake-up alarm – you need to set time for alarm. To turn off the alarm, you need to walk at least 20 steps. There is no snooze or stop option for alarm.
 
 #Configuration Required:
-Suppoerted devices: All android phones.
+Supported devices: All android phones.
 API: Supported for API 22 and above.
 
 #Permissions Required:
