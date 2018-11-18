@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\s531367\\Desktop\\fall 2018\\android\\ss\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\S531505\\Desktop\\SmartAlarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\s531367\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\54cd47f03fc71fed4dd787ed10c0f832\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\S531505\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\8289e276200fd0964b5a0e17adb8ee2d\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\s531367\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\f3bcaff116a33d9c24ec24d6eb46e350\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\S531505\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\749a6a0f7e39586d22c8560c5a211205\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
