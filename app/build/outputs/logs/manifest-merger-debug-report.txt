@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\6d4ca10ac259c9d43e93ba7c670e9ab7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\749a6a0f7e39586d22c8560c5a211205\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\01a401c70adaffc81996d7338bde6010\AndroidManifest.xml:2:1-11:12
@@ -54,39 +54,27 @@ MERGED from [com.android.support:print:28.0.0] C:\Users\S531505\.gradle\caches\t
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\24e5635e400c6d8d438e6c9ce633c990\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\a206b1a416486fa7ff8bac2bb788fbc4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\28f5c398f1949e43303ce59589830845\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:4:5-45
 		INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:2:11-69
-uses-feature#android.hardware.sensor.stepcounter
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:5:5-96
-	android:required
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:5:70-93
-	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:5:19-69
-uses-feature#android.hardware.sensor.stepdetector
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:6:5-97
-	android:required
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:6:71-94
-	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:6:19-70
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:7:5-67
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\5c275aaf138f3002b21b80cae27eb1b1\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\5c275aaf138f3002b21b80cae27eb1b1\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\37b7464aa48d7d365f3b56f11dd674b9\AndroidManifest.xml:23:5-67
@@ -98,13 +86,13 @@ MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\S53150
 MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9caa00775e111a22bc363d5ee7033938\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9caa00775e111a22bc363d5ee7033938\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:10:5-31:19
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:8:5-35:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\6d4ca10ac259c9d43e93ba7c670e9ab7\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\6d4ca10ac259c9d43e93ba7c670e9ab7\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\01a401c70adaffc81996d7338bde6010\AndroidManifest.xml:9:5-20
@@ -148,57 +136,73 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Us
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\S531505\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2c4fc346fcb683e73e0b7a352830034d\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:11:9-41
 	tools:ignore
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:17:9-48
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:15:9-48
 	android:roundIcon
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:12:9-43
 	android:icon
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:12:9-38
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:10:9-38
 	android:allowBackup
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.example.s531505.smartalarm.StartActivity
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:18:19-48
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:16:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:20:27-74
 activity#com.example.s531505.smartalarm.WakeupActivity
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:25:9-52
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:23:9-52
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:25:19-49
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:23:19-49
 activity#com.example.s531505.smartalarm.LocationActivity
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:26:9-54
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:24:9-54
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:26:19-51
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:24:19-51
 activity#com.example.s531505.smartalarm.AlertActivity
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:27:9-51
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:25:9-51
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:27:19-48
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:25:19-48
 activity#com.example.s531505.smartalarm.ConfirmDialog
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:28:9-51
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:26:9-51
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:28:19-48
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:26:19-48
 activity#com.example.s531505.smartalarm.ResetDialog
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:29:9-49
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:27:9-49
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:29:19-46
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:27:19-46
 activity#com.example.s531505.smartalarm.BackGrDialog
-ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:30:9-59
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:28:9-50
 	android:name
-		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:30:19-47
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:28:19-47
+activity#com.example.s531505.smartalarm.AboutActivity
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:29:9-51
+	android:name
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:29:19-48
+activity#com.example.s531505.smartalarm.ContactActivity
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:30:9-62
+	android:name
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:30:19-50
+activity#com.example.s531505.smartalarm.AlarmRecieverActivity
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:31:9-32:20
+	android:name
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:31:19-56
+activity#com.example.s531505.smartalarm.RepeatingAlarmReceiverActivity
+ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:33:9-34:20
+	android:name
+		ADDED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml:33:19-65
 uses-sdk
 INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\S531505\Desktop\SmartAlarm\app\src\main\AndroidManifest.xml

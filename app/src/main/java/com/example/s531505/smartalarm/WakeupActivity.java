@@ -1,124 +1,216 @@
 package com.example.s531505.smartalarm;
 
+import java.util.Calendar;
+
+import android.app.Activity;
 import android.app.AlarmManager;
+import android.app.Dialog;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import android.widget.Toast;
 
-public class WakeupActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener, ResetDialog.ResetDialogInterface, ConfirmDialog.ConfirmDialogInterface {
+public class WakeupActivity extends AppCompatActivity {
 
-    EditText time;
-    AlarmManager alarm_manager;
-    EditText notesDesc;
+    private TextView tvSelectedTime;
+    private Button btnChangeTime, btnSetAlarm, btnStopAlarm;
 
+    private int hour;
+    private int minute;
+    private Toast mToast;
 
+    static final int TIME_DIALOG_ID = 999;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public boolean onCreateOptionsMenu(Menu menu) {
+// Inflate the menu; this adds items to the
+//        action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.about:
+                Intent intent=new Intent(this,AboutActivity.class);
+                String s="Set Wake-up alarm";
+                intent.putExtra("msg",s);
+                startActivityForResult(intent,1);
+                Toast.makeText(WakeupActivity.this, "You are in About Activity!",
+                        Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.contact:
+                Intent init=new Intent(this,ContactActivity.class);
+                String st="Set location alarm";
+                init.putExtra("msg",st);
+                startActivityForResult(init,1);
+                Toast.makeText(WakeupActivity.this, "You are in contact Activity!",
+                        Toast.LENGTH_LONG).show();
+                return true;
+
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wakeup);
 
-        Button tbutton = (Button) findViewById(R.id.timebutton);
-        tbutton.setOnClickListener(new View.OnClickListener() {
+        setCurrentTimeOnView();
+        addListenerOnButton();
+
+        btnSetAlarm = (Button) findViewById(R.id.button1);
+        btnSetAlarm.setOnClickListener(new OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                android.support.v4.app.DialogFragment timePicker = new TimePickerFragment();
-                timePicker.show(getSupportFragmentManager(), "time picker");
+            public void onClick(View v) {
+                Intent intent = new Intent(WakeupActivity.this,
+                        AlarmRecieverActivity.class);
+                PendingIntent pendingIntent = PendingIntent.getActivity(
+                        WakeupActivity.this, 2, intent,
+                        PendingIntent.FLAG_CANCEL_CURRENT);
+                Calendar alarmCal = Calendar.getInstance();
+                alarmCal.setTimeInMillis(System.currentTimeMillis());
+                alarmCal.set(Calendar.HOUR_OF_DAY, hour);
+                alarmCal.set(Calendar.MINUTE, minute);
+                alarmCal.set(Calendar.SECOND, 0);
+                AlarmManager am = (AlarmManager) getSystemService(ALARM_SERVICE);
+                am.set(AlarmManager.RTC_WAKEUP, alarmCal.getTimeInMillis(),
+                        pendingIntent);
+
+                getPreferences(MODE_PRIVATE).edit()
+                        .putString("hour", String.valueOf(hour)).commit();
+                getPreferences(MODE_PRIVATE).edit()
+                        .putString("minute", String.valueOf(minute)).commit();
+
+                if (mToast != null) {
+                    mToast.cancel();
+                }
+                mToast = Toast.makeText(getApplicationContext(), "Alarm set",
+                        Toast.LENGTH_LONG);
+                mToast.show();
+            }
+        });
+
+        btnStopAlarm = (Button) findViewById(R.id.button3);
+        btnStopAlarm.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WakeupActivity.this,
+                        AlarmRecieverActivity.class);
+                PendingIntent pendingIntent = PendingIntent.getActivity(
+                        WakeupActivity.this, 2, intent, 0);
+                AlarmManager am = (AlarmManager) getSystemService(ALARM_SERVICE);
+                am.cancel(pendingIntent);
+
+                getPreferences(MODE_PRIVATE).edit().putString("hour", "-")
+                        .commit();
+                getPreferences(MODE_PRIVATE).edit().putString("minute", "-")
+                        .commit();
+                tvSelectedTime.setText(new StringBuilder().append(("-"))
+                        .append(":").append(("-")));
+
+                if (mToast != null) {
+                    mToast.cancel();
+                }
+                mToast = Toast.makeText(getApplicationContext(),
+                        "Alarm Cancelled", Toast.LENGTH_LONG);
+                mToast.show();
+
+            }
+        });
+
+    }
+
+
+    public void setCurrentTimeOnView() {
+
+        tvSelectedTime = (TextView) findViewById(R.id.tvSelectedTime);
+
+        final Calendar c = Calendar.getInstance();
+        hour = c.get(Calendar.HOUR_OF_DAY);
+        minute = c.get(Calendar.MINUTE);
+
+        String setHour = getPreferences(MODE_PRIVATE).getString("hour", "-");
+        String setMinute = getPreferences(MODE_PRIVATE)
+                .getString("minute", "-");
+
+        tvSelectedTime.setText(new StringBuilder().append((setHour))
+                .append(":").append((setMinute)));
+
+    }
+
+    public void addListenerOnButton() {
+
+        btnChangeTime = (Button) findViewById(R.id.btnChangeTime);
+
+        btnChangeTime.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                showDialog(TIME_DIALOG_ID);
             }
         });
     }
-    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-        int hour = hourOfDay;
-        int minutes = minute;
-        String timeSet = "";
-        if (hour > 12) {
-            hour -= 12;
-            timeSet = "PM";
-        } else if (hour == 0) {
-            hour += 12;
-            timeSet = "AM";
-        } else if (hour == 12){
-            timeSet = "PM";
-        }else{
-            timeSet = "AM";
-        }
 
-        String min = "";
-        if (minutes < 10) {
-            min = "0" + minutes;
-        }
-        else {
-            min = String.valueOf(minutes);
-        }
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        switch (id) {
+            case TIME_DIALOG_ID:
+                return new TimePickerDialog(this, timePickerListener, hour, minute,
+                        false);
 
-        time = (EditText) findViewById(R.id.setWakeUpTime);
-        String aTime = new StringBuilder().append(hour).append(':')
-                .append(min ).append(" ").append(timeSet).toString();
-        time.setText(aTime);
-
+        }
+        return null;
     }
 
-public void save(View v){
-    time = findViewById(R.id.setWakeUpTime);
-    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm a");
-    String format = simpleDateFormat.format(new Date());
-    Log.d( "Current Time: " , format);
-    if (time.getText().toString().isEmpty()) {
-    time.setError("error");
-    } else {
-        final String timet = time.getText().toString();
-        if (timet.equals(time.getText().toString())) {
-            Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-            Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
-            r.play();
-            TextView NotesDesc = findViewById(R.id.NotesDesc);
-            String text = NotesDesc.getText().toString();
-            Intent intent1 = new Intent(this, AlertActivity.class);
-            intent1.putExtra("Notes", text);
-            startActivity(intent1);
-        } else {
-            Intent intent1 = new Intent(this, StartActivity.class);
-            startActivity(intent1);
-        }
+    private TimePickerDialog.OnTimeSetListener timePickerListener = new TimePickerDialog.OnTimeSetListener() {
+        public void onTimeSet(TimePicker view, int selectedHour,
+                              int selectedMinute) {
+            hour = selectedHour;
+            minute = selectedMinute;
 
-    }
-}
-    public void cancel(View v){
-        ConfirmDialog confirmDialog = new ConfirmDialog();
-        confirmDialog.show(getSupportFragmentManager(), "cancel btn wakeup activity");
-    }
-    public void resetFunction(View v){
-  ResetDialog resetDialog = new ResetDialog();
-        resetDialog.show(getSupportFragmentManager(), "reset wakeup activity");
+            tvSelectedTime.setText(new StringBuilder().append(pad(hour))
+                    .append(":").append(pad(minute)));
+            btnSetAlarm.performClick();
+        }
+    };
+
+    private static String pad(int c) {
+        if (c >= 10)
+            return String.valueOf(c);
+        else
+            return "0" + String.valueOf(c);
     }
 
     @Override
-    public void reset() {
-        EditText wk=(EditText) findViewById(R.id.setWakeUpTime);
-        wk.setText("");
-        EditText sc=(EditText) findViewById(R.id.StepCount);
-        sc.setText("");
-        EditText nd=(EditText) findViewById(R.id.NotesDesc);
-        nd.setText("");
+    protected void onResume() {
+        super.onResume();
+        Log.i("onResume", "onResume");
+        setCurrentTimeOnView();
     }
 
     @Override
-    public void cancel() {
-        Intent intent1=new Intent(this,StartActivity.class);
-        startActivity(intent1);
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // TODO Auto-generated method stub
+        Log.i("onActivityResult", "onActivityResult");
+        super.onActivityResult(requestCode, resultCode, data);
+        String setHour = getPreferences(MODE_PRIVATE).getString("hour", "-");
+        String setMinute = getPreferences(MODE_PRIVATE)
+                .getString("minute", "-");
+        tvSelectedTime.setText(new StringBuilder().append((setHour))
+                .append(":").append((setMinute)));
     }
+
+
 }

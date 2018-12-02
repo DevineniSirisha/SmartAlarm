@@ -8,13 +8,6 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
-    <uses-feature
-        android:name="android.hardware.sensor.stepcounter"
-        android:required="true" />
-    <uses-feature
-        android:name="android.hardware.sensor.stepdetector"
-        android:required="true" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -51,6 +44,12 @@
         <activity android:name="com.example.s531505.smartalarm.ConfirmDialog" />
         <activity android:name="com.example.s531505.smartalarm.ResetDialog" />
         <activity android:name="com.example.s531505.smartalarm.BackGrDialog" />
+        <activity android:name="com.example.s531505.smartalarm.AboutActivity" />
+        <activity android:name="com.example.s531505.smartalarm.ContactActivity" />
+        <activity android:name="com.example.s531505.smartalarm.AlarmRecieverActivity" >
+        </activity>
+        <activity android:name="com.example.s531505.smartalarm.RepeatingAlarmReceiverActivity" >
+        </activity>
 
         <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
             <meta-data

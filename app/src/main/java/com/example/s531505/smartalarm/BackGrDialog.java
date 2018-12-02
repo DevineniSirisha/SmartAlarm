@@ -19,8 +19,7 @@ public class BackGrDialog extends DialogFragment {
         super.onAttach(act);
         color = (ColorCallBack) act;
     }
-    String[] images = {
-            "fancy yellow","paper", "electric spectrum", "pink flowers"};
+    String[] images = {"paper", "electric spectrum", "pink flowers"};
     @Override
     public Dialog onCreateDialog(Bundle sis){
         super.onCreateDialog(sis);

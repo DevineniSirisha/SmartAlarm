@@ -29,6 +29,30 @@ public class StartActivity extends AppCompatActivity implements BackGrDialog.Col
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.about:
+                Intent intent=new Intent(this,AboutActivity.class);
+                String s="Set Wake-up alarm";
+                intent.putExtra("msg",s);
+                startActivityForResult(intent,1);
+                Toast.makeText(StartActivity.this, "You are in About Activity!",
+                        Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.contact:
+                Intent init=new Intent(this,ContactActivity.class);
+                String st="Set location alarm";
+                init.putExtra("msg",st);
+                startActivityForResult(init,1);
+                Toast.makeText(StartActivity.this, "You are in contact Activity!",
+                        Toast.LENGTH_LONG).show();
+                return true;
+
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     public void wakeup(View v){
         Intent intent=new Intent(this,WakeupActivity.class);
         String s="Set Wake-up alarm";
@@ -45,29 +69,6 @@ public class StartActivity extends AppCompatActivity implements BackGrDialog.Col
         Toast.makeText(StartActivity.this, "You are in Location Activity!",
                 Toast.LENGTH_LONG).show();
     }
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.wake_up:
-                Intent intent=new Intent(this,WakeupActivity.class);
-                String s="Set Wake-up alarm";
-                intent.putExtra("msg",s);
-                startActivityForResult(intent,1);
-                Toast.makeText(StartActivity.this, "You are in Wake-up Activity!",
-                        Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.location:
-                Intent init=new Intent(this,LocationActivity.class);
-                String st="Set location alarm";
-                init.putExtra("msg",st);
-                startActivityForResult(init,1);
-                Toast.makeText(StartActivity.this, "You are in Location Activity!",
-                        Toast.LENGTH_LONG).show();
-                return true;
-
-
-        }
-     return super.onOptionsItemSelected(item);
-    }
 
 public void change(View v){
     BackGrDialog colorD = new BackGrDialog();
@@ -78,29 +79,17 @@ public void change(View v){
         WakeupActivity wake=new WakeupActivity();
         LocationActivity loc=new LocationActivity();
             ConstraintLayout bg=findViewById(R.id.bg);
-        View v1= getLayoutInflater().inflate(R.layout.activity_wakeup,null);
-        View v2= getLayoutInflater().inflate(R.layout.activity_location,null);
-        View v3= getLayoutInflater().inflate(R.layout.activity_alert,null);
-        ConstraintLayout bgw=v1.findViewById(R.id.bg1);
-        ConstraintLayout bgl=v1.findViewById(R.id.bg2);
-        ConstraintLayout bga=v1.findViewById(R.id.bg3);
-
             switch(imageChoice){
                 case 0:
-                    bg.setBackgroundResource(R.drawable.bg1);
-                   // bgw.getWindow().setBackgroundDrawableResource(R.drawable.bg1);
-
-                    break;
-                case 1:
                     bg.setBackgroundResource(R.drawable.bgr);
 
                     break;
-                case 2:
+                case 1:
                     bg.setBackgroundResource(R.drawable.bg3);
 
 
                     break;
-                case 3:
+                case 2:
                     bg.setBackgroundResource(R.drawable.bg4);
 
 

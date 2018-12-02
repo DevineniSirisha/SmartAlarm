@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.s531505.smartalarm">
-    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true" />
-    <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="true" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
@@ -27,7 +25,13 @@
         <activity android:name=".AlertActivity" />
         <activity android:name=".ConfirmDialog" />
         <activity android:name=".ResetDialog" />
-        <activity android:name=".BackGrDialog"></activity>
+        <activity android:name=".BackGrDialog" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ContactActivity"></activity>
+        <activity android:name=".AlarmRecieverActivity" >
+        </activity>
+        <activity android:name=".RepeatingAlarmReceiverActivity" >
+        </activity>
     </application>
 
 </manifest>
