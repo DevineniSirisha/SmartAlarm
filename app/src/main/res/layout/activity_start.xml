@@ -17,7 +17,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Welcome to SMART ALARM. If you want to set wake-up alarm click on WAKEUP ALARM button. If you want to set LOCATION ALARM click on location alarm."
+        android:text="                    Welcome to SMART ALARM.                         If you want to set wake-up alarm click on WAKE-UP ALARM button or If you want to set LOCATION ALARM click on location alarm."
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

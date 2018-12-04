@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@drawable/bg"
+    android:background="@drawable/backg"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -34,16 +34,17 @@
         app:layout_constraintVertical_bias="0.57" />
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="33dp"
+        android:layout_width="289dp"
+        android:layout_height="23dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673">
+        app:layout_constraintVertical_bias="0.651">
 
         <TextView
             android:id="@+id/lblSelectedTime"
@@ -52,6 +53,7 @@
             android:layout_gravity="left"
             android:text="@string/selected_time"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textStyle="bold" />
 
         <TextView

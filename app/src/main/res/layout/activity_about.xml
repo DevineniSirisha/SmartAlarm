@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/backg"
     tools:context=".AboutActivity">
 
     <TextView
@@ -23,17 +23,18 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="280dp"
-        android:layout_height="164dp"
-        android:text=" Hello all, We are graduate students at NorthWest Missouri State University. As a project we have designed this app. Here is our team From left Dattu Bhargav, Manogna, Sirisha, Yashwanth. Hope you liked our project."
-        android:textColor="@android:color/holo_blue_dark"
+        android:layout_width="322dp"
+        android:layout_height="140dp"
+        android:text="Hello all, We are graduate students at NorthWest Missouri State University. As a project we have designed this app. Here is our team From left Dattu Bhargav, Manogna, Sirisha, Yashwanth. Hope you liked our project."
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.794" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <ImageView
         android:id="@+id/imageView"

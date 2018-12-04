@@ -1014,12 +1014,14 @@ drawable alarm
 drawable alarm_clock
 drawable avd_hide_password
 drawable avd_show_password
+drawable backg
 drawable bg
 drawable bg1
 drawable bg2
 drawable bg3
 drawable bg4
 drawable bgr
+drawable btnbg
 drawable btns
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -1055,6 +1057,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable icon
+drawable infoback
 drawable location
 drawable locationicon
 drawable manu
@@ -1081,6 +1084,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable tvs
 drawable wakeup
+drawable wakeupman
 drawable yashwanth
 id ALT
 id AlarmDes
