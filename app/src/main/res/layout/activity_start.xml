@@ -72,41 +72,27 @@
         android:layout_height="62dp"
         android:layout_marginStart="34dp"
         android:layout_marginEnd="79dp"
-        android:layout_marginBottom="180dp"
+        android:layout_marginBottom="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toEndOf="@+id/btn1"
         app:srcCompat="@drawable/wakeupman" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="66dp"
-        android:layout_height="103dp"
+        android:layout_width="62dp"
+        android:layout_height="83dp"
         android:layout_marginStart="42dp"
         android:layout_marginEnd="93dp"
         android:layout_marginBottom="71dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btn2"
         app:layout_constraintTop_toBottomOf="@+id/alarmIM"
+        app:layout_constraintVertical_bias="0.307"
         app:srcCompat="@drawable/location" />
-
-    <Button
-        android:id="@+id/change"
-        android:layout_width="208dp"
-        android:layout_height="47dp"
-        android:background="@color/colorPrimary"
-        android:onClick="change"
-        android:text="Change Background"
-        android:textColor="@android:color/background_light"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969" />
 
 
 </android.support.constraint.ConstraintLayout>
