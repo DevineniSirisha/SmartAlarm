@@ -2000,8 +2000,17 @@
         "source": "C:\\Users\\s531367\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-12.0.1.aar\\82b4474c02a5b50d606ea90693a86730\\res\\drawable-watch-v20\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\SmartAlarm\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_17_dark.png.flat",
         "source": "C:\\Users\\s531367\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\30cc205895603af702f55f46d2e40f37\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png"
+=======
+        "merged": "C:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\build\\intermediates\\res\\merged\\debug\\drawable_locationbg.PNG.flat",
+        "source": "C:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\src\\main\\res\\drawable\\locationbg.PNG"
+    },
+    {
+        "merged": "C:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\S531519\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\79f780a1dd0be87dbdd3ccdb7b12ecde\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+>>>>>>> d214f9523683a6bec010b0cdcd4739cf1cc60dc1
     },
     {
         "merged": "C:\\SmartAlarm\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_mr_button_disabled_dark.png.flat",

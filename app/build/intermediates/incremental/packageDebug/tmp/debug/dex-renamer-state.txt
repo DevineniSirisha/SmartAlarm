@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #Mon Dec 03 22:11:54 CST 2018
 path.2=classes2.dex
+=======
+#Mon Dec 03 20:57:32 CST 2018
+base.0=C\:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+>>>>>>> d214f9523683a6bec010b0cdcd4739cf1cc60dc1
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex

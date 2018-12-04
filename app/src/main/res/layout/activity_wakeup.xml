@@ -62,6 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textIsSelectable="true"
             android:textStyle="bold" />
     </LinearLayout>
