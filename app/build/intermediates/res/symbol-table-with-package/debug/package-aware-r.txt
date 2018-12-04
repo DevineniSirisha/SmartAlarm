@@ -1059,6 +1059,7 @@ drawable ic_mtrl_chip_close_circle
 drawable icon
 drawable infoback
 drawable location
+drawable locationbg
 drawable locationicon
 drawable manu
 drawable mapsearchbtn
