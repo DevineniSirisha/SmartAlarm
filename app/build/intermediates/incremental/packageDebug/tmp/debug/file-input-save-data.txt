@@ -1,11 +1,15 @@
 #Internal package file, do not edit.
-#Mon Dec 03 19:00:37 CST 2018
-1.base=C\:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+#Mon Dec 03 22:11:56 CST 2018
+1.base=C\:\\SmartAlarm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+2.path=classes.dex
 0.baseType=DIRECTORY
+2.base=C\:\\SmartAlarm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+2.set=DEX
 1.baseType=DIRECTORY
-count=2
+count=3
 1.set=DEX
 0.path=classes.dex
 0.set=DEX
-0.base=C\:\\Users\\S531519\\AndroidStudioProjects\\SmartAlarm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-1.path=classes.dex
+0.base=C\:\\SmartAlarm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+2.baseType=DIRECTORY
+1.path=classes2.dex

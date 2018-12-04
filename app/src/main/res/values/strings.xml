@@ -100,4 +100,44 @@
     <string name="incorrect_step_length">Incorrect step length format! Go to the Settings to change it!</string>
     <string name="quit">Quit</string>
 
+    <string name="alarm_name">Alarm Name</string>
+    <string name="eg_name">Eg: Walmart</string>
+    <string name="alarm_notes">Alarm Notes</string>
+    <string name="eg_notes">Eg: Get the groceries</string>
+    <string name="radius_in_mtr">Radius in mts</string>
+    <string name="eg_radius_in_mtr">Eg: 500</string>
+    <string name="destination">Destination</string>
+    <string name="your_destination">Your destination</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="enter_name">Enter Alarm Name</string>
+    <string name="enter_notes">Enter Alarm Notes</string>
+    <string name="enter_radius">Enter Radius limit for alarm to detect</string>
+    <string name="enter_destination">Enter your destination</string>
+    <string name="dialog_reset_title">Reset</string>
+    <string name="dialog_reset_message">Are you sure you want to reset the Alarm?</string>
+    <string name="yes">Yes</string>
+    <string name="dialog_cancel_message">Are you sure, you want to cancel your modifications?</string>
+    <string name="dialog_cancel_title">Cancel</string>
+    <string name="dialog_save_message">Your Alarm has been set</string>
+    <string name="okay">OK</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="request_updates">Request updates</string>
+    <string name="remove_updates">Remove updates</string>
+    <string name="unknown_location">Unknown location</string>
+    <string name="batched_location_updates">Batched location updates</string>
+
+    <plurals name="num_locations_reported">
+        <item quantity="zero">No location reported</item>
+        <item quantity="one">One location reported</item>
+        <item quantity="other">%d locations reported</item>
+    </plurals>
+
+    <string name="default_channel">Default channel</string>
+    <string name="gps_network_not_enabled">Enable GPS to enable detect your current location and track the destination address!</string>
+    <string name="open_location_settings">Open Location settings</string>
+
 </resources>
