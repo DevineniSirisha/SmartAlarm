@@ -5,9 +5,26 @@
     android:id="@+id/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/backg"
     android:fitsSystemWindows="true"
     tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="341dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Welcome to SMART ALARM. If you want to set wake-up alarm click on WAKEUP ALARM button. If you want to set LOCATION ALARM click on location alarm."
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
 
     <Button
         android:id="@+id/btn1"
@@ -17,14 +34,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/btns"
+        android:background="@drawable/btnbg"
         android:onClick="wakeup"
         android:text="wake-up alarm"
         android:textColor="@android:color/background_light"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.642" />
@@ -37,7 +54,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/btns"
+        android:background="@drawable/btnbg"
         android:onClick="location"
         android:text="location alarm"
         android:textColor="@android:color/background_light"
@@ -49,39 +66,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.804" />
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="303dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/tvs"
-        android:text="Welcome to SMART ALARM. If you want to set wake-up alarm click on WAKEUP ALARM button. If you want to set LOCATION ALARM click on location alarm.!!!!"
-        android:textSize="20dp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.208" />
-
     <ImageView
         android:id="@+id/alarmIM"
         android:layout_width="73dp"
         android:layout_height="62dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="62dp"
         android:layout_marginEnd="79dp"
-        android:layout_marginBottom="169dp"
+        android:layout_marginBottom="180dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/tv1"
-        app:layout_constraintVertical_bias="0.558"
-        app:srcCompat="@drawable/alarm" />
+        app:srcCompat="@drawable/wakeupman" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -98,8 +93,8 @@
 
     <Button
         android:id="@+id/change"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="208dp"
+        android:layout_height="47dp"
         android:background="@color/colorPrimary"
         android:onClick="change"
         android:text="Change Background"
