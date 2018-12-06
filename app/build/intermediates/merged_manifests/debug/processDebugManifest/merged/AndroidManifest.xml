@@ -54,6 +54,24 @@
         <activity android:name="com.example.s531505.smartalarm.RepeatingAlarmReceiverActivity" >
         </activity>
 
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA3uD9FT1wj4OfD1L8tCRmV2VRc5ZmK_rU" />
+
+        <service
+            android:name="com.example.s531505.smartalarm.LocationUpdatesIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.example.s531505.smartalarm.LocationUpdatesBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.smartalarm.LocationUpdatesBroadcastReceiver.ACTION_PROCESS_UPDATES" />
+            </intent-filter>
+        </receiver>
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 
         <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
@@ -201,10 +219,6 @@
             android:authorities="com.example.s531505.smartalarm.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

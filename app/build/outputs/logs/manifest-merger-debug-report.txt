@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\aa6085b5f7934730de788fc75fb331f4\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-12.0.1.aar\891cd1233809af1bc8fbef9959b87c69\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-12.0.1.aar\860f4ed1389341b1134359f67fbbd087\AndroidManifest.xml:2:1-14:12
@@ -141,22 +141,22 @@ MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] 
 MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-vision-license-12.0.1.aar\329ec57305f9c8878f6fbc87b5d54f05\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-wallet-license:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-wallet-license-12.0.1.aar\73b1dbb41a6d97221207402747163ee6\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-wearable-license:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-wearable-license-12.0.1.aar\020c2e0f112bd18b574d9f0dd7281672\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
 	package
 		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:4:5-45
 		INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml
 		INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:2:11-69
@@ -193,7 +193,7 @@ ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
 		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:8:5-35:19
+ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:8:5-54:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\aa6085b5f7934730de788fc75fb331f4\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\aa6085b5f7934730de788fc75fb331f4\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-12.0.1.aar\891cd1233809af1bc8fbef9959b87c69\AndroidManifest.xml:5:5-20
@@ -464,6 +464,38 @@ activity#com.example.s531505.smartalarm.RepeatingAlarmReceiverActivity
 ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:33:9-34:20
 	android:name
 		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:33:19-65
+meta-data#com.google.android.gms.version
+ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:35:9-37:69
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\494ba2d05c91ff6c060d5dfcfa7aa620\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\494ba2d05c91ff6c060d5dfcfa7aa620\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:37:13-66
+	android:name
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:36:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:39:9-41:71
+	android:value
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:41:13-68
+	android:name
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:40:13-58
+service#com.example.s531505.smartalarm.LocationUpdatesIntentService
+ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:43:9-45:40
+	android:exported
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:45:13-37
+	android:name
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:44:13-87
+receiver#com.example.s531505.smartalarm.LocationUpdatesBroadcastReceiver
+ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:47:9-53:20
+	android:exported
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:49:13-36
+	android:name
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:48:13-91
+intent-filter#action:name:com.smartalarm.LocationUpdatesBroadcastReceiver.ACTION_PROCESS_UPDATES
+ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:50:13-52:29
+action#com.smartalarm.LocationUpdatesBroadcastReceiver.ACTION_PROCESS_UPDATES
+ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:51:17-113
+	android:name
+		ADDED from C:\SmartAlarm\app\src\main\AndroidManifest.xml:51:25-110
 uses-sdk
 INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\SmartAlarm\app\src\main\AndroidManifest.xml
@@ -1078,9 +1110,3 @@ ADDED from [com.google.firebase:firebase-common:12.0.1] C:\Users\s531367\.gradle
 		ADDED from [com.google.firebase:firebase-common:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\firebase-common-12.0.1.aar\dede7bb4faa3e402e1c086e1f11a8829\AndroidManifest.xml:12:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\firebase-common-12.0.1.aar\dede7bb4faa3e402e1c086e1f11a8829\AndroidManifest.xml:9:13-77
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\494ba2d05c91ff6c060d5dfcfa7aa620\AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\494ba2d05c91ff6c060d5dfcfa7aa620\AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\s531367\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\494ba2d05c91ff6c060d5dfcfa7aa620\AndroidManifest.xml:24:13-58
