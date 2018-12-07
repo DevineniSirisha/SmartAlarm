@@ -93,7 +93,7 @@ public class AlarmRecieverActivity extends Activity implements
                 .getDefaultSensor((Sensor.TYPE_ACCELEROMETER));
 
         mSensorManager.registerListener((SensorEventListener) this,
-                mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+                mAccelerometer, SensorManager.SENSOR_DELAY_UI);
         playSound(this, getAlarmUri());
 
     }
