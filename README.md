@@ -23,8 +23,9 @@ There is no authentication for this app. Any user can use this app.
 
 # Getting Started
  To download Smart Alarm Mobile app. Download from this link
- https://github.com/DevineniSirisha/SmartAlarm/blob/master/app/build/outputs/apk/debug/app-debug.apk
-
+https://github.com/DevineniSirisha/SmartAlarm/blob/master/app-debug.apk
+ - Install app
+ - Open
 # Developer Tools
 - Android Studio: https://developer.android.com/studio/
 - Git for Windows: https://git-scm.com/downloads
